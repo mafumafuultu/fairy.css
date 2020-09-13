@@ -1,0 +1,55 @@
+.dark {
+	each(range(0, 360, 10), {
+		--color-@{value}: darken(hsl(@value, 100%, 50%), 20%);
+		&.color-c-@{value},
+		& .color-c-@{value} {color: contrast(darken(hsl(@value, 100%, 50%), 20%));}
+	})
+}
+.darkness {
+	each(range(0, 360, 10), {
+		--color-@{value}: darken(hsl(@value, 100%, 50%), 40%);
+		&.color-c-@{value},
+		& .color-c-@{value} {color: contrast(darken(hsl(@value, 100%, 50%), 40%));}
+	})
+}
+.light {
+	each(range(0, 360, 10), {
+		--color-@{value}: lighten(hsl(@value, 100%, 50%), 20%);
+		&.color-c-@{value},
+		& .color-c-@{value} {color: contrast(lighten(hsl(@value, 100%, 50%), 20%));}
+	})
+}
+.aurora {
+	each(range(0, 360, 10), {
+		--color-@{value}: lighten(hsl(@value, 100%, 50%), 40%);
+		&.color-c-@{value},
+		& .color-c-@{value} {color: contrast(lighten(hsl(@value, 100%, 50%), 40%));}
+	})
+}
+.gray {
+	&.darkness, & .darkness {
+		each(range(0, 360, 10), {--color-g-@{value}: greyscale(darken(hsl(@value, 100%, 50%), 40%));})
+	}
+	&.dark, & .dark {
+		each(range(0, 360, 10), {--color-g-@{value}: greyscale(darken(hsl(@value, 100%, 50%), 20%));})
+	}
+	&.light, & .light {
+		each(range(0, 360, 10), {--color-g-@{value}: greyscale(lighten(hsl(@value, 100%, 50%), 20%));})
+	}
+	&.aurora, & .aurora {
+		each(range(0, 360, 10), {--color-g-@{value}: greyscale(lighten(hsl(@value, 100%, 50%), 40%));})
+	}
+
+	each(range(0, 360, 10), {
+		--color-@{value}: greyscale(hsl(0, 100%, unit(100/360*@value, ~"%")));
+
+		&.color-c-@{value},
+		& .color-c-@{value} {color: contrast(greyscale(hsl(0, 100%, unit(100/360*@value, ~"%"))));}
+	})
+}
+
+each(range(0, 360, 10), {
+	.bg-@{value} {background-color: var(~"--color-@{value}", hsl(@value, 100%, 50%));}
+	.color-@{value} {color: var(~"--color-g-@{value}", var(~"--color-@{value}", hsl(@value, 100%, 50%)));}
+	.color-c-@{value} {color: var(~"--color-g-@{value}", var(~"--color-@{value}",contrast(hsl(0, 100%, unit(100/360*@value, ~"%")))));}
+})

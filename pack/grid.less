@@ -1,0 +1,33 @@
+@import "list.less";
+.grid {display: grid; grid-template-columns: repeat(12, minmax(0, calc(100% / 12))); grid-gap: var(--g-gap, 0);max-width: 100%;}
+each(range(1, 12), {
+	.g-@{value}    {grid-column-start: @value;}
+	.g-s-@{value}  {grid-column-start: span @value;}
+	.g--@{value}   {grid-column-end: @value+1;}
+	.g-s--@{value} {grid-column-end: span @value+1;}
+	.g-r@{value}    {grid-row-start: @value;}
+	.g-s-r@{value}  {grid-row-start: span @value;}
+	.g--r@{value}   {grid-row-end: @value+1;}
+	.g-s--r@{value} {grid-row-end: span @value+1;}
+})
+each(@gap-items, {.gap-@{index} {--g-gap: @value;}})
+
+
+.f-ani {transition: flex-grow 200ms ease-in-out 100ms ;}
+.f-g--fn(@value) {flex-grow: @value;}
+
+.flex {display: flex;}
+each(range(0, 6), {
+	.g--(@v) {
+		.f-g-@{value} {
+			flex-grow: @value;
+
+			&-@{v} {.f-g--fn(@value);}
+			&-@{v}:hover {.f-g--fn(@v);}
+		}
+	}
+	each(range(0, 6), {
+		.g--(@value);
+	})
+	.f-s-@{value} {flex-shrink: @value;}
+})

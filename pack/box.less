@@ -1,0 +1,33 @@
+@import "list.less";
+/*
+width height margin padding
+*/
+
+.border-box,a,article,aside,blockquote,body,code,dd,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,input[type=email],input[type=number],input[type=password],input[type=tel],input[type=text],input[type=url],legend,li,main,nav,ol,p,pre,section,table,td,textarea,th,tr,ul{box-sizing:border-box}
+
+each(@gap-items, {
+	.pad-a-@{index} {padding: @value;}
+	.mar-a-@{index} {margin: @value;}
+	.pad-a--@{index} > * {padding: @value;}
+	.mar-a--@{index} > * {margin: @value;}
+
+	.pad-t-@{index} {padding-top: @value;}
+	.pad-r-@{index} {padding-right: @value;}
+	.pad-b-@{index} {padding-bottom: @value;}
+	.pad-l-@{index} {padding-left: @value;}
+
+	.pad-tb-@{index} {padding-top: @value;padding-bottom: @value;}
+	.pad-lr-@{index} {padding-left: @value;padding-right: @value;}
+
+	.mar-t-@{index} {margin-top: @value;}
+	.mar-r-@{index} {margin-right: @value;}
+	.mar-b-@{index} {margin-bottom: @value;}
+	.mar-l-@{index} {margin-left: @value;}
+
+	.mar-tb-@{index} {margin-top: @value;margin-bottom: @value;}
+	.mar-lr-@{index} {margin-left: @value;margin-right: @value;}
+})
+
+each(range(10, 100, 10), {
+	.w-@{value} {width: unit(@value, ~"%");}
+})
