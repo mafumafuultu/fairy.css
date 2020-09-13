@@ -340,16 +340,6 @@ Specifying a color based on HSL
 <div class="bg-20"></div>
 ```
 
-### `.bg-g-[lightness]`
-gray scale
-
-```html
-<div class="bg-g-0"></div>
-<div class="bg-g-1"></div>
-<div class="bg-g-2"></div>
-```
-
-
 ## Color
 
 text color
