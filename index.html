@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./fairy.css">
+	<title>#Fairy.css</title>
+</head>
+
+<body>
+	<header class="bb bw4">
+		<h1>#Fairy css</h1>
+		<p>Grid & Flex support</p>
+	</header>
+	<section>
+		<h2 class="mt mb m-5 bb bw3">start</h2>
+		GitHub: <a href="https://github.com/mafumafuultu/fairy.css">mafumafuultu/fairy.css</a>
+
+	</section>
+	<nav>
+		<ul>
+			<li>Heading</li>
+			<li>Grid <ul>
+					<li>gap</li>
+				</ul>
+			</li>
+			<li>Flex</li>
+			<li>Border <ul>
+					<li>radius</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h2 class="mt mb m-5 bb bw3">Heading</h2>
+			<div class="grid">
+				<div class="g-s-6">
+					<div class="h1">.h1 sample text</div>
+					<div class="h2">.h2 sample text</div>
+					<div class="h3">.h3 sample text</div>
+					<div class="h4">.h4 sample text</div>
+					<div class="h5">.h5 sample text</div>
+					<div class="h6">.h6 sample text</div>
+				</div>
+				<div class="g-s-6">
+					<dl>
+						<dt><span class="code">.h[number]</span></dt>
+						<dd>[number] 1 ~ 6 heading font size
+							<dl>
+								<dd>1 : 3rem</dd>
+								<dd>2 : 2.25rem</dd>
+								<dd>3 : 1.5rem</dd>
+								<dd>4 : 1.25rem</dd>
+								<dd>5 : 1rem;</dd>
+								<dd>6 : 0.875rem</dd>
+							</dl>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2 class="mt mb m-5 bb bw3">Grid</h2>
+			<div class="grid">
+				<div class="g-s-6">
+					<dl>
+						<dt><span class="code">.grid</span></dt>
+						<dd>display: grid</dd>
+						<dt><span class="code">.g-[number]</span></dt>
+						<dd> grid-column-start: [number]</dd>
+						<dt><span class="code">.g-s-[number]</span></dt>
+						<dd> grid-column-start: span [number]</dd>
+						<dt><span class="code">.g--[number]</span></dt>
+						<dd> grid-column-end: [number]</dd>
+						<dt><span class="code">.g-s--[number]</span></dt>
+						<dd> grid-column-end: span [number]</dd>
+
+						<dt><span class="code">.g-r[number]</span></dt>
+						<dd> grid-row-start: [number]</dd>
+						<dt><span class="code">.g-s-r[number]</span></dt>
+						<dd> grid-row-start: span [number]</dd>
+						<dt><span class="code">.g--r[number]</span></dt>
+						<dd> grid-row-end: [number]</dd>
+						<dt><span class="code">.g-s--r[number]</span></dt>
+						<dd> grid-row-end: span [number]</dd>
+					</dl>
+				</div>
+				<div class="g-s-6">
+					<dl>
+						<dt>[number] 1 ~ 12 grid axis</dt>
+						<dd>1 : 3rem</dd>
+						<dd>2 : 2.25rem</dd>
+						<dd>3 : 1.5rem</dd>
+						<dd>4 : 1.25rem</dd>
+						<dd>5 : 1rem;</dd>
+						<dd>6 : 0.875rem</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="grid gap-3 w-100 debug">
+				<div class="g-s-12">.g-s-12</div>
+				<div class="g-s-11">.g-s-11</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-10">.g-s-10</div>
+				<div class="g-s-2">.g-s-2</div>
+				<div class="g-s-9">.g-s-9</div>
+				<div class="g-s-3">.g-s-3</div>
+				<div class="g-s-8">.g-s-8</div>
+				<div class="g-s-4">.g-s-4</div>
+				<div class="g-s-7">.g-s-7</div>
+				<div class="g-s-5">.g-s-5</div>
+				<div class="g-s-6">.g-s-6</div>
+				<div class="g-s-6">.g-s-6</div>
+				<div class="g-s-5">.g-s-5</div>
+				<div class="g-s-7">.g-s-7</div>
+				<div class="g-s-4">.g-s-4</div>
+				<div class="g-s-8">.g-s-8</div>
+				<div class="g-s-3">.g-s-3</div>
+				<div class="g-s-9">.g-s-9</div>
+				<div class="g-s-2">.g-s-2</div>
+				<div class="g-s-10">.g-s-10</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-11">.g-s-11</div>
+
+				<div class="g-s-3">.g-s-3</div>
+				<div class="g-s-3">.g-s-3</div>
+				<div class="g-s-3">.g-s-3</div>
+				<div class="g-s-3">.g-s-3</div>
+				<div class="g-s-4">.g-s-4</div>
+				<div class="g-s-4">.g-s-4</div>
+				<div class="g-s-4">.g-s-4</div>
+				<div class="g-s-2">.g-s-2</div>
+				<div class="g-s-2">.g-s-2</div>
+				<div class="g-s-2">.g-s-2</div>
+				<div class="g-s-2">.g-s-2</div>
+				<div class="g-s-2">.g-s-2</div>
+				<div class="g-s-2">.g-s-2</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+				<div class="g-s-1">.g-s-1</div>
+			</div>
+			<h3 class="bb bw2">gap</h3>
+			<div class="grid w-100">
+				<div class="g-s-6">
+					<div class="grid g-s-12 gap-1 mar-tb-4 debug">
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+						<div class="g-s-4 g-s-r2">.gap-1</div>
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+					</div>
+					<div class="grid g-s-12 gap-2mar-tb-4 debug">
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+						<div class="g-s-4 g-s-r2">.gap-2</div>
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+					</div>
+					<div class="grid g-s-12 gap-3 mar-tb-4 debug">
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+						<div class="g-s-4 g-s-r2">.gap-3</div>
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+					</div>
+					<div class="grid g-s-12 gap-4 mar-tb-4 debug">
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+						<div class="g-s-4 g-s-r2">.gap-4</div>
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+					</div>
+					<div class="grid g-s-12 gap-5 mar-tb-4 debug">
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+						<div class="g-s-4 g-s-r2">.gap-5</div>
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+					</div>
+					<div class="grid g-s-12 gap-6 mar-tb-4 debug">
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+						<div class="g-s-4 g-s-r2">.gap-6</div>
+						<div class="g-1 g-s--3">.g-s--3</div>
+						<div class="g-s-4">.g-s-4</div>
+					</div>
+				</div>
+				<div class="g-s-6">
+					<dl>
+						<dt><span class="code">.grid.gap-[number]</span></dt>
+						<dd>[number]: 1 ~ 6
+						<dd>1 : 3rem</dd>
+						<dd>2 : 2.25rem</dd>
+						<dd>3 : 1.5rem</dd>
+						<dd>4 : 1.25rem</dd>
+						<dd>5 : 1rem;</dd>
+						<dd>6 : 0.875rem</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2 class="mt mb m-5 bb bw3">Flex</h2>
+			<dl>
+				<dt><span class="code">.flex</span></dt>
+				<dd>display: flex</dd>
+				<dt><span class="code">.f-g-[grow]</span></dt>
+				<dd>[grow]: 1 ~ 6 flex-grow: [grow]</dd>
+				<dt><span class="code">.f-s-[shrink]</span></dt>
+				<dd>[shrink]: 1 ~ 6 flex-shrink: [shrink]</dd>
+				<dt><span class="code">.f-g-[grow_from]-[grow_to]</span></dt>
+				<dd>hover [grow_from]: 1 ~ 6, [grow_to] 1 ~ 6 </dd>
+				<dt><span class="code">.f-ani.f-g-[grow_from]-[grow_to]</span></dt>
+				<dd>hover transition flex-grow</dd>
+			</dl>
+			<div class="flex pad-a--3">
+				<div class="f-g-2 bg-160">.f-g-2</div>
+				<div class="f-g-2 bg-180">.f-g-2</div>
+				<div class="f-g-2 bg-200">.f-g-2</div>
+				<div class="f-g-1 bg-220">.f-g-1</div>
+			</div>
+			<div class="flex pad-a--3">
+				<div class="f-s-2 bg-240">.f-s-2</div>
+				<div class="f-s-2 bg-260">.f-s-2</div>
+				<div class="f-s-2 bg-280">.f-s-2</div>
+				<div class="f-s-1 bg-300">.f-s-1</div>
+			</div>
+			<div class="flex pad-a--3">
+				<div class="f-g-1-4 f-ani bg-0">sampte 1</div>
+				<div class="f-g-1-4 f-ani bg-20">sampte 2</div>
+				<div class="f-g-1-4 f-ani bg-40">sampte 3</div>
+				<div class="f-g-1-4 f-ani bg-60">sampte 4</div>
+				<div class="f-g-1-4 f-ani bg-80">sampte 5</div>
+				<div class="f-g-1-4 f-ani bg-100">sampte 6</div>
+			</div>
+		</section>
+		<section>
+			<h2 class="mt mb m-5 bb bw3">margin padding</h2>
+		</section>
+		<section>
+			<h2 class="mt mb m-5 bb bw3">Border</h2>
+			<div class="grid gap-3">
+				<div class="grid g-s-6 gap-3">
+					<div class="g-1 g-s--1 bn">.bn</div>
+					<div class="g-s-2 ba">.ba</div>
+					<div class="g-s-2 bt">.bt</div>
+					<div class="g-s-2 br">.br</div>
+					<div class="g-s-2 bb">.bb</div>
+					<div class="g-s-2 bl">.bl</div>
+					<div class="g-1 g-s--1 bt bb">.bt.bb</div>
+					<div class="g-s-2 bl br">.bl.br</div>
+					<div class="g-1 g-s--1 b-t">.b-t</div>
+					<div class="g-s-2 b-r">.b-r</div>
+					<div class="g-s-2 b-b">.b-b</div>
+					<div class="g-s-2 b-l">.b-l</div>
+					<div class="g-1 g-s--1 ba bw1">.ba.bw1</div>
+					<div class="g-s-2 ba bw2">.ba.bw2</div>
+					<div class="g-s-2 ba bw3">.ba.bw3</div>
+					<div class="g-s-2 ba bw4">.ba.bw4</div>
+					<div class="g-s-2 ba bw5">.ba.bw5</div>
+					<div class="g-s-2 ba bw6">.ba.bw6</div>
+				</div>
+				<div class="g-s-6">
+					<dl>
+						<dt><span class="code">.b[n,a,t,r,b,l]</span></dt>
+						<dd>border-style: solid;</dd>
+						<dd>n: none;</dd>
+						<dd>a: solid;</dd>
+						<dd>t: top: solid;</dd>
+						<dd>r: right: solid;</dd>
+						<dd>b: bottom: solid;</dd>
+						<dd>l: left: solid;</dd>
+						<dt><span class="code">.b-[t,r,b,l]</span></dt>
+						<dd>all - [t,r,b,l]</dd>
+						<dt><span class="code">.b--[none, solid, dotted, dashed]</span></dt>
+						<dd>border-style</dd>
+						<dt><span class="code">.bw[number]</span></dt>
+						<dd>[number] 1 ~ 6 <dl>
+								<dd>1 : 0</dd>
+								<dd>2 : .125rem</dd>
+								<dd>3 : .25rem</dd>
+								<dd>4 : .5rem</dd>
+								<dd>5 : 1rem</dd>
+								<dd>6 : 2rem</dd>
+							</dl>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+			<h3 class="bb bw2">Border radius</h3>
+			<div class="grid gap-3 w-100 pad-a--3">
+				<div class="grid g-s-6">
+					<div class="g-1 g-s--5 pa b-rad-1 ba bw2">sample</div>
+					<div class="g-s-6">.b-rad-1</div>
+					<div class="g-1 g-s--5 pa b-rad-2 ba bw2">sample</div>
+					<div class="g-s-6">.b-rad-2</div>
+					<div class="g-1 g-s--5 pa b-rad-3 ba bw2">sample</div>
+					<div class="g-s-6">.b-rad-3</div>
+					<div class="g-1 g-s--5 pa b-rad-4 ba bw2">sample</div>
+					<div class="g-s-6">.b-rad-4</div>
+					<div class="g-1 g-s--5 pa b-rad-5 ba bw2">sample</div>
+					<div class="g-s-6">.b-rad-5</div>
+				</div>
+				<div class="grid g-s-6">
+					<div class="g-s-12">
+						<dl>
+							<dt><span class="code">.b-rad-[number]</span></dt>
+							<dd>[number] 1 ~ 5</dd>
+							<dd>1: 1px;<br> 2: 2px;<br> 3: 4px;<br> 4: 0.5rem;<br> 5: 1rem;
+							<dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<h3 class="bb bw2">Background grid</h3>
+			<div class="grid gap-3 pad-a--3">
+				<div class="grid g-s-6">
+					<div class="g-1 g-s--5 bg-g-s-1"></div>
+					<div class="g-s-6">.bg-g-s-1</div>
+					<div class="g-1 g-s--5 bg-g-s-2"></div>
+					<div class="g-s-6">.bg-g-s-2</div>
+					<div class="g-1 g-s--5 bg-g-s-3"></div>
+					<div class="g-s-6">.bg-g-s-3</div>
+					<div class="g-1 g-s--5 bg-g-s-4"></div>
+					<div class="g-s-6">.bg-g-s-4</div>
+					<div class="g-1 g-s--5 bg-g-s-5"></div>
+					<div class="g-s-6">.bg-g-s-5</div>
+				</div>
+				<div class="g-s-6">
+					<dl>
+						<dt><span class="code">.bg-g-s-[number]</span></dt>
+						<dd>[number] 1 ~ 5</dd>
+						<dd>1 : 10px</dd>
+						<dd>2 : 15px</dd>
+						<dd>3 : 20px</dd>
+						<dd>4 : 25px</dd>
+						<dd>5 : 30px</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+		<section>
+			<h2 class="mt mb m-5 bb bw3">Color</h2>
+			<h3 class="bb bw2">Background, Color</h3>
+			<dl>
+				<dt><span class="code">.bg-[hue]</span></dt>
+				<dd>background-color: hls(hue, 100%, 50%)</dd>
+				<dt><span class="code">.color-[hue]</span></dt>
+				<dd>color: hls(hue, 100%, 50%)</dd>
+				<dt><span class="code">.bg-g-[lightness]</span></dt>
+				<dd>gray background-color: hls(0, 100%, 100/360*lightness %)</dd>
+				<dt><span class="code">.color-c-[hue]</span></dt>
+				<dd>Set the color of the text to be easier to read on a specified background color.</dd>
+			</dl>
+			<h3 class="bb bw2">Theme</h3>
+			<dl>
+				<dt><span class="code">[none]</span></dt>
+				<dd>standerd color</dd>
+				<dt><span class="code">.dark .bg-[hue]</span> <span class="code">.dark .color-[hue]</span></dt>
+				<dd>color: hls(hue, 100%, 30%)</dd>
+				<dt><span class="code">.darkness .bg-[hue]</span> <span class="code">.darkness .color-[hue]</span></dt>
+				<dd>color: hls(hue, 100%, 10%)</dd>
+				<dt><span class="code">.light .bg-[hue]</span> <span class="code">.light .color-[hue]</span></dt>
+				<dd>color: hls(hue, 100%, 70%)</dd>
+				<dt><span class="code">.aurora .bg-[hue]</span> <span class="code">.aurora .color-[hue]</span></dt>
+				<dd>color: hls(hue, 100%, 90%)</dd>
+				<dt><span class="code">.gray .bg-[hue]</span> <span class="code">.aurora .color-[hue]</span></dt>
+				<dd>color: hls(hue, 100%, 90%) to grayscale</dd>
+			</dl>
+			<div class="grid w-100">
+				<div class="grid g-s-1 pad-a--1 darkness">
+					<div class="g-s-12">.darkness</div>
+					<div class="bg-0 g-s-12">.bg-0</div>
+					<div class="bg-10 g-s-12">.bg-10</div>
+					<div class="bg-20 g-s-12">.bg-20</div>
+					<div class="bg-30 g-s-12">.bg-30</div>
+					<div class="bg-40 g-s-12">.bg-40</div>
+					<div class="bg-50 g-s-12">.bg-50</div>
+					<div class="bg-60 g-s-12">.bg-60</div>
+					<div class="bg-70 g-s-12">.bg-70</div>
+					<div class="bg-80 g-s-12">.bg-80</div>
+					<div class="bg-90 g-s-12">.bg-90</div>
+					<div class="bg-100 g-s-12">.bg-100</div>
+					<div class="bg-110 g-s-12">.bg-110</div>
+					<div class="bg-120 g-s-12">.bg-120</div>
+					<div class="bg-130 g-s-12">.bg-130</div>
+					<div class="bg-140 g-s-12">.bg-140</div>
+					<div class="bg-150 g-s-12">.bg-150</div>
+					<div class="bg-160 g-s-12">.bg-160</div>
+					<div class="bg-170 g-s-12">.bg-170</div>
+					<div class="bg-180 g-s-12">.bg-180</div>
+					<div class="bg-190 g-s-12">.bg-190</div>
+					<div class="bg-200 g-s-12">.bg-200</div>
+					<div class="bg-210 g-s-12">.bg-210</div>
+					<div class="bg-220 g-s-12">.bg-220</div>
+					<div class="bg-230 g-s-12">.bg-230</div>
+					<div class="bg-240 g-s-12">.bg-240</div>
+					<div class="bg-250 g-s-12">.bg-250</div>
+					<div class="bg-260 g-s-12">.bg-260</div>
+					<div class="bg-270 g-s-12">.bg-270</div>
+					<div class="bg-280 g-s-12">.bg-280</div>
+					<div class="bg-290 g-s-12">.bg-290</div>
+					<div class="bg-300 g-s-12">.bg-300</div>
+					<div class="bg-310 g-s-12">.bg-310</div>
+					<div class="bg-320 g-s-12">.bg-320</div>
+					<div class="bg-330 g-s-12">.bg-330</div>
+					<div class="bg-340 g-s-12">.bg-340</div>
+					<div class="bg-350 g-s-12">.bg-350</div>
+					<div class="bg-360 g-s-12">.bg-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1 darkness">
+					<div class="g-s-12 color-0">.darkness</div>
+					<div class="color-0 g-s-12">.color-0</div>
+					<div class="color-10 g-s-12">.color-10</div>
+					<div class="color-20 g-s-12">.color-20</div>
+					<div class="color-30 g-s-12">.color-30</div>
+					<div class="color-40 g-s-12">.color-40</div>
+					<div class="color-50 g-s-12">.color-50</div>
+					<div class="color-60 g-s-12">.color-60</div>
+					<div class="color-70 g-s-12">.color-70</div>
+					<div class="color-80 g-s-12">.color-80</div>
+					<div class="color-90 g-s-12">.color-90</div>
+					<div class="color-100 g-s-12">.color-100</div>
+					<div class="color-110 g-s-12">.color-110</div>
+					<div class="color-120 g-s-12">.color-120</div>
+					<div class="color-130 g-s-12">.color-130</div>
+					<div class="color-140 g-s-12">.color-140</div>
+					<div class="color-150 g-s-12">.color-150</div>
+					<div class="color-160 g-s-12">.color-160</div>
+					<div class="color-170 g-s-12">.color-170</div>
+					<div class="color-180 g-s-12">.color-180</div>
+					<div class="color-190 g-s-12">.color-190</div>
+					<div class="color-200 g-s-12">.color-200</div>
+					<div class="color-210 g-s-12">.color-210</div>
+					<div class="color-220 g-s-12">.color-220</div>
+					<div class="color-230 g-s-12">.color-230</div>
+					<div class="color-240 g-s-12">.color-240</div>
+					<div class="color-250 g-s-12">.color-250</div>
+					<div class="color-260 g-s-12">.color-260</div>
+					<div class="color-270 g-s-12">.color-270</div>
+					<div class="color-280 g-s-12">.color-280</div>
+					<div class="color-290 g-s-12">.color-290</div>
+					<div class="color-300 g-s-12">.color-300</div>
+					<div class="color-310 g-s-12">.color-310</div>
+					<div class="color-320 g-s-12">.color-320</div>
+					<div class="color-330 g-s-12">.color-330</div>
+					<div class="color-340 g-s-12">.color-340</div>
+					<div class="color-350 g-s-12">.color-350</div>
+					<div class="color-360 g-s-12">.color-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1 dark">
+					<div class="g-s-12">.dark</div>
+					<div class="bg-0 g-s-12">.bg-0</div>
+					<div class="bg-10 g-s-12">.bg-10</div>
+					<div class="bg-20 g-s-12">.bg-20</div>
+					<div class="bg-30 g-s-12">.bg-30</div>
+					<div class="bg-40 g-s-12">.bg-40</div>
+					<div class="bg-50 g-s-12">.bg-50</div>
+					<div class="bg-60 g-s-12">.bg-60</div>
+					<div class="bg-70 g-s-12">.bg-70</div>
+					<div class="bg-80 g-s-12">.bg-80</div>
+					<div class="bg-90 g-s-12">.bg-90</div>
+					<div class="bg-100 g-s-12">.bg-100</div>
+					<div class="bg-110 g-s-12">.bg-110</div>
+					<div class="bg-120 g-s-12">.bg-120</div>
+					<div class="bg-130 g-s-12">.bg-130</div>
+					<div class="bg-140 g-s-12">.bg-140</div>
+					<div class="bg-150 g-s-12">.bg-150</div>
+					<div class="bg-160 g-s-12">.bg-160</div>
+					<div class="bg-170 g-s-12">.bg-170</div>
+					<div class="bg-180 g-s-12">.bg-180</div>
+					<div class="bg-190 g-s-12">.bg-190</div>
+					<div class="bg-200 g-s-12">.bg-200</div>
+					<div class="bg-210 g-s-12">.bg-210</div>
+					<div class="bg-220 g-s-12">.bg-220</div>
+					<div class="bg-230 g-s-12">.bg-230</div>
+					<div class="bg-240 g-s-12">.bg-240</div>
+					<div class="bg-250 g-s-12">.bg-250</div>
+					<div class="bg-260 g-s-12">.bg-260</div>
+					<div class="bg-270 g-s-12">.bg-270</div>
+					<div class="bg-280 g-s-12">.bg-280</div>
+					<div class="bg-290 g-s-12">.bg-290</div>
+					<div class="bg-300 g-s-12">.bg-300</div>
+					<div class="bg-310 g-s-12">.bg-310</div>
+					<div class="bg-320 g-s-12">.bg-320</div>
+					<div class="bg-330 g-s-12">.bg-330</div>
+					<div class="bg-340 g-s-12">.bg-340</div>
+					<div class="bg-350 g-s-12">.bg-350</div>
+					<div class="bg-360 g-s-12">.bg-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1 dark">
+					<div class="g-s-12 color-0">.dark</div>
+					<div class="color-0 g-s-12">.color-0</div>
+					<div class="color-10 g-s-12">.color-10</div>
+					<div class="color-20 g-s-12">.color-20</div>
+					<div class="color-30 g-s-12">.color-30</div>
+					<div class="color-40 g-s-12">.color-40</div>
+					<div class="color-50 g-s-12">.color-50</div>
+					<div class="color-60 g-s-12">.color-60</div>
+					<div class="color-70 g-s-12">.color-70</div>
+					<div class="color-80 g-s-12">.color-80</div>
+					<div class="color-90 g-s-12">.color-90</div>
+					<div class="color-100 g-s-12">.color-100</div>
+					<div class="color-110 g-s-12">.color-110</div>
+					<div class="color-120 g-s-12">.color-120</div>
+					<div class="color-130 g-s-12">.color-130</div>
+					<div class="color-140 g-s-12">.color-140</div>
+					<div class="color-150 g-s-12">.color-150</div>
+					<div class="color-160 g-s-12">.color-160</div>
+					<div class="color-170 g-s-12">.color-170</div>
+					<div class="color-180 g-s-12">.color-180</div>
+					<div class="color-190 g-s-12">.color-190</div>
+					<div class="color-200 g-s-12">.color-200</div>
+					<div class="color-210 g-s-12">.color-210</div>
+					<div class="color-220 g-s-12">.color-220</div>
+					<div class="color-230 g-s-12">.color-230</div>
+					<div class="color-240 g-s-12">.color-240</div>
+					<div class="color-250 g-s-12">.color-250</div>
+					<div class="color-260 g-s-12">.color-260</div>
+					<div class="color-270 g-s-12">.color-270</div>
+					<div class="color-280 g-s-12">.color-280</div>
+					<div class="color-290 g-s-12">.color-290</div>
+					<div class="color-300 g-s-12">.color-300</div>
+					<div class="color-310 g-s-12">.color-310</div>
+					<div class="color-320 g-s-12">.color-320</div>
+					<div class="color-330 g-s-12">.color-330</div>
+					<div class="color-340 g-s-12">.color-340</div>
+					<div class="color-350 g-s-12">.color-350</div>
+					<div class="color-360 g-s-12">.color-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1">
+					<div class="g-s-12">standard</div>
+					<div class="bg-0 g-s-12">.bg-0</div>
+					<div class="bg-10 g-s-12">.bg-10</div>
+					<div class="bg-20 g-s-12">.bg-20</div>
+					<div class="bg-30 g-s-12">.bg-30</div>
+					<div class="bg-40 g-s-12">.bg-40</div>
+					<div class="bg-50 g-s-12">.bg-50</div>
+					<div class="bg-60 g-s-12">.bg-60</div>
+					<div class="bg-70 g-s-12">.bg-70</div>
+					<div class="bg-80 g-s-12">.bg-80</div>
+					<div class="bg-90 g-s-12">.bg-90</div>
+					<div class="bg-100 g-s-12">.bg-100</div>
+					<div class="bg-110 g-s-12">.bg-110</div>
+					<div class="bg-120 g-s-12">.bg-120</div>
+					<div class="bg-130 g-s-12">.bg-130</div>
+					<div class="bg-140 g-s-12">.bg-140</div>
+					<div class="bg-150 g-s-12">.bg-150</div>
+					<div class="bg-160 g-s-12">.bg-160</div>
+					<div class="bg-170 g-s-12">.bg-170</div>
+					<div class="bg-180 g-s-12">.bg-180</div>
+					<div class="bg-190 g-s-12">.bg-190</div>
+					<div class="bg-200 g-s-12">.bg-200</div>
+					<div class="bg-210 g-s-12">.bg-210</div>
+					<div class="bg-220 g-s-12">.bg-220</div>
+					<div class="bg-230 g-s-12">.bg-230</div>
+					<div class="bg-240 g-s-12">.bg-240</div>
+					<div class="bg-250 g-s-12">.bg-250</div>
+					<div class="bg-260 g-s-12">.bg-260</div>
+					<div class="bg-270 g-s-12">.bg-270</div>
+					<div class="bg-280 g-s-12">.bg-280</div>
+					<div class="bg-290 g-s-12">.bg-290</div>
+					<div class="bg-300 g-s-12">.bg-300</div>
+					<div class="bg-310 g-s-12">.bg-310</div>
+					<div class="bg-320 g-s-12">.bg-320</div>
+					<div class="bg-330 g-s-12">.bg-330</div>
+					<div class="bg-340 g-s-12">.bg-340</div>
+					<div class="bg-350 g-s-12">.bg-350</div>
+					<div class="bg-360 g-s-12">.bg-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1">
+					<div class="g-s-12 color-0">standard</div>
+					<div class="color-0 g-s-12">.color-0</div>
+					<div class="color-10 g-s-12">.color-10</div>
+					<div class="color-20 g-s-12">.color-20</div>
+					<div class="color-30 g-s-12">.color-30</div>
+					<div class="color-40 g-s-12">.color-40</div>
+					<div class="color-50 g-s-12">.color-50</div>
+					<div class="color-60 g-s-12">.color-60</div>
+					<div class="color-70 g-s-12">.color-70</div>
+					<div class="color-80 g-s-12">.color-80</div>
+					<div class="color-90 g-s-12">.color-90</div>
+					<div class="color-100 g-s-12">.color-100</div>
+					<div class="color-110 g-s-12">.color-110</div>
+					<div class="color-120 g-s-12">.color-120</div>
+					<div class="color-130 g-s-12">.color-130</div>
+					<div class="color-140 g-s-12">.color-140</div>
+					<div class="color-150 g-s-12">.color-150</div>
+					<div class="color-160 g-s-12">.color-160</div>
+					<div class="color-170 g-s-12">.color-170</div>
+					<div class="color-180 g-s-12">.color-180</div>
+					<div class="color-190 g-s-12">.color-190</div>
+					<div class="color-200 g-s-12">.color-200</div>
+					<div class="color-210 g-s-12">.color-210</div>
+					<div class="color-220 g-s-12">.color-220</div>
+					<div class="color-230 g-s-12">.color-230</div>
+					<div class="color-240 g-s-12">.color-240</div>
+					<div class="color-250 g-s-12">.color-250</div>
+					<div class="color-260 g-s-12">.color-260</div>
+					<div class="color-270 g-s-12">.color-270</div>
+					<div class="color-280 g-s-12">.color-280</div>
+					<div class="color-290 g-s-12">.color-290</div>
+					<div class="color-300 g-s-12">.color-300</div>
+					<div class="color-310 g-s-12">.color-310</div>
+					<div class="color-320 g-s-12">.color-320</div>
+					<div class="color-330 g-s-12">.color-330</div>
+					<div class="color-340 g-s-12">.color-340</div>
+					<div class="color-350 g-s-12">.color-350</div>
+					<div class="color-360 g-s-12">.color-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1 light">
+					<div class="g-s-12">.light</div>
+					<div class="bg-0 g-s-12">.bg-0</div>
+					<div class="bg-10 g-s-12">.bg-10</div>
+					<div class="bg-20 g-s-12">.bg-20</div>
+					<div class="bg-30 g-s-12">.bg-30</div>
+					<div class="bg-40 g-s-12">.bg-40</div>
+					<div class="bg-50 g-s-12">.bg-50</div>
+					<div class="bg-60 g-s-12">.bg-60</div>
+					<div class="bg-70 g-s-12">.bg-70</div>
+					<div class="bg-80 g-s-12">.bg-80</div>
+					<div class="bg-90 g-s-12">.bg-90</div>
+					<div class="bg-100 g-s-12">.bg-100</div>
+					<div class="bg-110 g-s-12">.bg-110</div>
+					<div class="bg-120 g-s-12">.bg-120</div>
+					<div class="bg-130 g-s-12">.bg-130</div>
+					<div class="bg-140 g-s-12">.bg-140</div>
+					<div class="bg-150 g-s-12">.bg-150</div>
+					<div class="bg-160 g-s-12">.bg-160</div>
+					<div class="bg-170 g-s-12">.bg-170</div>
+					<div class="bg-180 g-s-12">.bg-180</div>
+					<div class="bg-190 g-s-12">.bg-190</div>
+					<div class="bg-200 g-s-12">.bg-200</div>
+					<div class="bg-210 g-s-12">.bg-210</div>
+					<div class="bg-220 g-s-12">.bg-220</div>
+					<div class="bg-230 g-s-12">.bg-230</div>
+					<div class="bg-240 g-s-12">.bg-240</div>
+					<div class="bg-250 g-s-12">.bg-250</div>
+					<div class="bg-260 g-s-12">.bg-260</div>
+					<div class="bg-270 g-s-12">.bg-270</div>
+					<div class="bg-280 g-s-12">.bg-280</div>
+					<div class="bg-290 g-s-12">.bg-290</div>
+					<div class="bg-300 g-s-12">.bg-300</div>
+					<div class="bg-310 g-s-12">.bg-310</div>
+					<div class="bg-320 g-s-12">.bg-320</div>
+					<div class="bg-330 g-s-12">.bg-330</div>
+					<div class="bg-340 g-s-12">.bg-340</div>
+					<div class="bg-350 g-s-12">.bg-350</div>
+					<div class="bg-360 g-s-12">.bg-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1 light">
+					<div class="g-s-12 color-0">light</div>
+					<div class="color-0 g-s-12">.color-0</div>
+					<div class="color-10 g-s-12">.color-10</div>
+					<div class="color-20 g-s-12">.color-20</div>
+					<div class="color-30 g-s-12">.color-30</div>
+					<div class="color-40 g-s-12">.color-40</div>
+					<div class="color-50 g-s-12">.color-50</div>
+					<div class="color-60 g-s-12">.color-60</div>
+					<div class="color-70 g-s-12">.color-70</div>
+					<div class="color-80 g-s-12">.color-80</div>
+					<div class="color-90 g-s-12">.color-90</div>
+					<div class="color-100 g-s-12">.color-100</div>
+					<div class="color-110 g-s-12">.color-110</div>
+					<div class="color-120 g-s-12">.color-120</div>
+					<div class="color-130 g-s-12">.color-130</div>
+					<div class="color-140 g-s-12">.color-140</div>
+					<div class="color-150 g-s-12">.color-150</div>
+					<div class="color-160 g-s-12">.color-160</div>
+					<div class="color-170 g-s-12">.color-170</div>
+					<div class="color-180 g-s-12">.color-180</div>
+					<div class="color-190 g-s-12">.color-190</div>
+					<div class="color-200 g-s-12">.color-200</div>
+					<div class="color-210 g-s-12">.color-210</div>
+					<div class="color-220 g-s-12">.color-220</div>
+					<div class="color-230 g-s-12">.color-230</div>
+					<div class="color-240 g-s-12">.color-240</div>
+					<div class="color-250 g-s-12">.color-250</div>
+					<div class="color-260 g-s-12">.color-260</div>
+					<div class="color-270 g-s-12">.color-270</div>
+					<div class="color-280 g-s-12">.color-280</div>
+					<div class="color-290 g-s-12">.color-290</div>
+					<div class="color-300 g-s-12">.color-300</div>
+					<div class="color-310 g-s-12">.color-310</div>
+					<div class="color-320 g-s-12">.color-320</div>
+					<div class="color-330 g-s-12">.color-330</div>
+					<div class="color-340 g-s-12">.color-340</div>
+					<div class="color-350 g-s-12">.color-350</div>
+					<div class="color-360 g-s-12">.color-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1 aurora">
+					<div class="g-s-12">.aurora</div>
+					<div class="bg-0 g-s-12">.bg-0</div>
+					<div class="bg-10 g-s-12">.bg-10</div>
+					<div class="bg-20 g-s-12">.bg-20</div>
+					<div class="bg-30 g-s-12">.bg-30</div>
+					<div class="bg-40 g-s-12">.bg-40</div>
+					<div class="bg-50 g-s-12">.bg-50</div>
+					<div class="bg-60 g-s-12">.bg-60</div>
+					<div class="bg-70 g-s-12">.bg-70</div>
+					<div class="bg-80 g-s-12">.bg-80</div>
+					<div class="bg-90 g-s-12">.bg-90</div>
+					<div class="bg-100 g-s-12">.bg-100</div>
+					<div class="bg-110 g-s-12">.bg-110</div>
+					<div class="bg-120 g-s-12">.bg-120</div>
+					<div class="bg-130 g-s-12">.bg-130</div>
+					<div class="bg-140 g-s-12">.bg-140</div>
+					<div class="bg-150 g-s-12">.bg-150</div>
+					<div class="bg-160 g-s-12">.bg-160</div>
+					<div class="bg-170 g-s-12">.bg-170</div>
+					<div class="bg-180 g-s-12">.bg-180</div>
+					<div class="bg-190 g-s-12">.bg-190</div>
+					<div class="bg-200 g-s-12">.bg-200</div>
+					<div class="bg-210 g-s-12">.bg-210</div>
+					<div class="bg-220 g-s-12">.bg-220</div>
+					<div class="bg-230 g-s-12">.bg-230</div>
+					<div class="bg-240 g-s-12">.bg-240</div>
+					<div class="bg-250 g-s-12">.bg-250</div>
+					<div class="bg-260 g-s-12">.bg-260</div>
+					<div class="bg-270 g-s-12">.bg-270</div>
+					<div class="bg-280 g-s-12">.bg-280</div>
+					<div class="bg-290 g-s-12">.bg-290</div>
+					<div class="bg-300 g-s-12">.bg-300</div>
+					<div class="bg-310 g-s-12">.bg-310</div>
+					<div class="bg-320 g-s-12">.bg-320</div>
+					<div class="bg-330 g-s-12">.bg-330</div>
+					<div class="bg-340 g-s-12">.bg-340</div>
+					<div class="bg-350 g-s-12">.bg-350</div>
+					<div class="bg-360 g-s-12">.bg-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1 aurora">
+					<div class="g-s-12 color-0">aurora</div>
+					<div class="color-0 g-s-12">.color-0</div>
+					<div class="color-10 g-s-12">.color-10</div>
+					<div class="color-20 g-s-12">.color-20</div>
+					<div class="color-30 g-s-12">.color-30</div>
+					<div class="color-40 g-s-12">.color-40</div>
+					<div class="color-50 g-s-12">.color-50</div>
+					<div class="color-60 g-s-12">.color-60</div>
+					<div class="color-70 g-s-12">.color-70</div>
+					<div class="color-80 g-s-12">.color-80</div>
+					<div class="color-90 g-s-12">.color-90</div>
+					<div class="color-100 g-s-12">.color-100</div>
+					<div class="color-110 g-s-12">.color-110</div>
+					<div class="color-120 g-s-12">.color-120</div>
+					<div class="color-130 g-s-12">.color-130</div>
+					<div class="color-140 g-s-12">.color-140</div>
+					<div class="color-150 g-s-12">.color-150</div>
+					<div class="color-160 g-s-12">.color-160</div>
+					<div class="color-170 g-s-12">.color-170</div>
+					<div class="color-180 g-s-12">.color-180</div>
+					<div class="color-190 g-s-12">.color-190</div>
+					<div class="color-200 g-s-12">.color-200</div>
+					<div class="color-210 g-s-12">.color-210</div>
+					<div class="color-220 g-s-12">.color-220</div>
+					<div class="color-230 g-s-12">.color-230</div>
+					<div class="color-240 g-s-12">.color-240</div>
+					<div class="color-250 g-s-12">.color-250</div>
+					<div class="color-260 g-s-12">.color-260</div>
+					<div class="color-270 g-s-12">.color-270</div>
+					<div class="color-280 g-s-12">.color-280</div>
+					<div class="color-290 g-s-12">.color-290</div>
+					<div class="color-300 g-s-12">.color-300</div>
+					<div class="color-310 g-s-12">.color-310</div>
+					<div class="color-320 g-s-12">.color-320</div>
+					<div class="color-330 g-s-12">.color-330</div>
+					<div class="color-340 g-s-12">.color-340</div>
+					<div class="color-350 g-s-12">.color-350</div>
+					<div class="color-360 g-s-12">.color-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1 gray">
+					<div class="g-s-12">.aurora</div>
+					<div class="bg-0 g-s-12">.bg-0</div>
+					<div class="bg-10 g-s-12">.bg-10</div>
+					<div class="bg-20 g-s-12">.bg-20</div>
+					<div class="bg-30 g-s-12">.bg-30</div>
+					<div class="bg-40 g-s-12">.bg-40</div>
+					<div class="bg-50 g-s-12">.bg-50</div>
+					<div class="bg-60 g-s-12">.bg-60</div>
+					<div class="bg-70 g-s-12">.bg-70</div>
+					<div class="bg-80 g-s-12">.bg-80</div>
+					<div class="bg-90 g-s-12">.bg-90</div>
+					<div class="bg-100 g-s-12">.bg-100</div>
+					<div class="bg-110 g-s-12">.bg-110</div>
+					<div class="bg-120 g-s-12">.bg-120</div>
+					<div class="bg-130 g-s-12">.bg-130</div>
+					<div class="bg-140 g-s-12">.bg-140</div>
+					<div class="bg-150 g-s-12">.bg-150</div>
+					<div class="bg-160 g-s-12">.bg-160</div>
+					<div class="bg-170 g-s-12">.bg-170</div>
+					<div class="bg-180 g-s-12">.bg-180</div>
+					<div class="bg-190 g-s-12">.bg-190</div>
+					<div class="bg-200 g-s-12">.bg-200</div>
+					<div class="bg-210 g-s-12">.bg-210</div>
+					<div class="bg-220 g-s-12">.bg-220</div>
+					<div class="bg-230 g-s-12">.bg-230</div>
+					<div class="bg-240 g-s-12">.bg-240</div>
+					<div class="bg-250 g-s-12">.bg-250</div>
+					<div class="bg-260 g-s-12">.bg-260</div>
+					<div class="bg-270 g-s-12">.bg-270</div>
+					<div class="bg-280 g-s-12">.bg-280</div>
+					<div class="bg-290 g-s-12">.bg-290</div>
+					<div class="bg-300 g-s-12">.bg-300</div>
+					<div class="bg-310 g-s-12">.bg-310</div>
+					<div class="bg-320 g-s-12">.bg-320</div>
+					<div class="bg-330 g-s-12">.bg-330</div>
+					<div class="bg-340 g-s-12">.bg-340</div>
+					<div class="bg-350 g-s-12">.bg-350</div>
+					<div class="bg-360 g-s-12">.bg-360</div>
+				</div>
+				<div class="grid g-s-1 pad-a--1 gray">
+					<div class="g-s-12 color-0">aurora</div>
+					<div class="color-0 g-s-12">.color-0</div>
+					<div class="color-10 g-s-12">.color-10</div>
+					<div class="color-20 g-s-12">.color-20</div>
+					<div class="color-30 g-s-12">.color-30</div>
+					<div class="color-40 g-s-12">.color-40</div>
+					<div class="color-50 g-s-12">.color-50</div>
+					<div class="color-60 g-s-12">.color-60</div>
+					<div class="color-70 g-s-12">.color-70</div>
+					<div class="color-80 g-s-12">.color-80</div>
+					<div class="color-90 g-s-12">.color-90</div>
+					<div class="color-100 g-s-12">.color-100</div>
+					<div class="color-110 g-s-12">.color-110</div>
+					<div class="color-120 g-s-12">.color-120</div>
+					<div class="color-130 g-s-12">.color-130</div>
+					<div class="color-140 g-s-12">.color-140</div>
+					<div class="color-150 g-s-12">.color-150</div>
+					<div class="color-160 g-s-12">.color-160</div>
+					<div class="color-170 g-s-12">.color-170</div>
+					<div class="color-180 g-s-12">.color-180</div>
+					<div class="color-190 g-s-12">.color-190</div>
+					<div class="color-200 g-s-12">.color-200</div>
+					<div class="color-210 g-s-12">.color-210</div>
+					<div class="color-220 g-s-12">.color-220</div>
+					<div class="color-230 g-s-12">.color-230</div>
+					<div class="color-240 g-s-12">.color-240</div>
+					<div class="color-250 g-s-12">.color-250</div>
+					<div class="color-260 g-s-12">.color-260</div>
+					<div class="color-270 g-s-12">.color-270</div>
+					<div class="color-280 g-s-12">.color-280</div>
+					<div class="color-290 g-s-12">.color-290</div>
+					<div class="color-300 g-s-12">.color-300</div>
+					<div class="color-310 g-s-12">.color-310</div>
+					<div class="color-320 g-s-12">.color-320</div>
+					<div class="color-330 g-s-12">.color-330</div>
+					<div class="color-340 g-s-12">.color-340</div>
+					<div class="color-350 g-s-12">.color-350</div>
+					<div class="color-360 g-s-12">.color-360</div>
+				</div>
+			</div>
+
+			<div class="grid w-100">
+				<div class="g-s-12 g-s-r1">Contrast Color</div>
+				<div class="grid g-s-2 pad-a--1 darkness">
+					<div class="g-s-12">.darkness</div>
+					<div class="bg-0 color-c-0 g-s-12">.bg-0.color-c-0</div>
+					<div class="bg-10 color-c-10 g-s-12">.bg-10.color-c-10</div>
+					<div class="bg-20 color-c-20 g-s-12">.bg-20.color-c-20</div>
+					<div class="bg-30 color-c-30 g-s-12">.bg-30.color-c-30</div>
+					<div class="bg-40 color-c-40 g-s-12">.bg-40.color-c-40</div>
+					<div class="bg-50 color-c-50 g-s-12">.bg-50.color-c-50</div>
+					<div class="bg-60 color-c-60 g-s-12">.bg-60.color-c-60</div>
+					<div class="bg-70 color-c-70 g-s-12">.bg-70.color-c-70</div>
+					<div class="bg-80 color-c-80 g-s-12">.bg-80.color-c-80</div>
+					<div class="bg-90 color-c-90 g-s-12">.bg-90.color-c-90</div>
+					<div class="bg-100 color-c-100 g-s-12">.bg-100.color-c-100</div>
+					<div class="bg-110 color-c-110 g-s-12">.bg-110.color-c-110</div>
+					<div class="bg-120 color-c-120 g-s-12">.bg-120.color-c-120</div>
+					<div class="bg-130 color-c-130 g-s-12">.bg-130.color-c-130</div>
+					<div class="bg-140 color-c-140 g-s-12">.bg-140.color-c-140</div>
+					<div class="bg-150 color-c-150 g-s-12">.bg-150.color-c-150</div>
+					<div class="bg-160 color-c-160 g-s-12">.bg-160.color-c-160</div>
+					<div class="bg-170 color-c-170 g-s-12">.bg-170.color-c-170</div>
+					<div class="bg-180 color-c-180 g-s-12">.bg-180.color-c-180</div>
+					<div class="bg-190 color-c-190 g-s-12">.bg-190.color-c-190</div>
+					<div class="bg-200 color-c-200 g-s-12">.bg-200.color-c-200</div>
+					<div class="bg-210 color-c-210 g-s-12">.bg-210.color-c-210</div>
+					<div class="bg-220 color-c-220 g-s-12">.bg-220.color-c-220</div>
+					<div class="bg-230 color-c-230 g-s-12">.bg-230.color-c-230</div>
+					<div class="bg-240 color-c-240 g-s-12">.bg-240.color-c-240</div>
+					<div class="bg-250 color-c-250 g-s-12">.bg-250.color-c-250</div>
+					<div class="bg-260 color-c-260 g-s-12">.bg-260.color-c-260</div>
+					<div class="bg-270 color-c-270 g-s-12">.bg-270.color-c-270</div>
+					<div class="bg-280 color-c-280 g-s-12">.bg-280.color-c-280</div>
+					<div class="bg-290 color-c-290 g-s-12">.bg-290.color-c-290</div>
+					<div class="bg-300 color-c-300 g-s-12">.bg-300.color-c-300</div>
+					<div class="bg-310 color-c-310 g-s-12">.bg-310.color-c-310</div>
+					<div class="bg-320 color-c-320 g-s-12">.bg-320.color-c-320</div>
+					<div class="bg-330 color-c-330 g-s-12">.bg-330.color-c-330</div>
+					<div class="bg-340 color-c-340 g-s-12">.bg-340.color-c-340</div>
+					<div class="bg-350 color-c-350 g-s-12">.bg-350.color-c-350</div>
+					<div class="bg-360 color-c-360 g-s-12">.bg-360.color-c-360</div>
+				</div>
+				<div class="grid g-s-2 pad-a--1 dark">
+					<div class="g-s-12">.dark</div>
+					<div class="bg-0 color-c-0 g-s-12">.bg-0.color-c-0</div>
+					<div class="bg-10 color-c-10 g-s-12">.bg-10.color-c-10</div>
+					<div class="bg-20 color-c-20 g-s-12">.bg-20.color-c-20</div>
+					<div class="bg-30 color-c-30 g-s-12">.bg-30.color-c-30</div>
+					<div class="bg-40 color-c-40 g-s-12">.bg-40.color-c-40</div>
+					<div class="bg-50 color-c-50 g-s-12">.bg-50.color-c-50</div>
+					<div class="bg-60 color-c-60 g-s-12">.bg-60.color-c-60</div>
+					<div class="bg-70 color-c-70 g-s-12">.bg-70.color-c-70</div>
+					<div class="bg-80 color-c-80 g-s-12">.bg-80.color-c-80</div>
+					<div class="bg-90 color-c-90 g-s-12">.bg-90.color-c-90</div>
+					<div class="bg-100 color-c-100 g-s-12">.bg-100.color-c-100</div>
+					<div class="bg-110 color-c-110 g-s-12">.bg-110.color-c-110</div>
+					<div class="bg-120 color-c-120 g-s-12">.bg-120.color-c-120</div>
+					<div class="bg-130 color-c-130 g-s-12">.bg-130.color-c-130</div>
+					<div class="bg-140 color-c-140 g-s-12">.bg-140.color-c-140</div>
+					<div class="bg-150 color-c-150 g-s-12">.bg-150.color-c-150</div>
+					<div class="bg-160 color-c-160 g-s-12">.bg-160.color-c-160</div>
+					<div class="bg-170 color-c-170 g-s-12">.bg-170.color-c-170</div>
+					<div class="bg-180 color-c-180 g-s-12">.bg-180.color-c-180</div>
+					<div class="bg-190 color-c-190 g-s-12">.bg-190.color-c-190</div>
+					<div class="bg-200 color-c-200 g-s-12">.bg-200.color-c-200</div>
+					<div class="bg-210 color-c-210 g-s-12">.bg-210.color-c-210</div>
+					<div class="bg-220 color-c-220 g-s-12">.bg-220.color-c-220</div>
+					<div class="bg-230 color-c-230 g-s-12">.bg-230.color-c-230</div>
+					<div class="bg-240 color-c-240 g-s-12">.bg-240.color-c-240</div>
+					<div class="bg-250 color-c-250 g-s-12">.bg-250.color-c-250</div>
+					<div class="bg-260 color-c-260 g-s-12">.bg-260.color-c-260</div>
+					<div class="bg-270 color-c-270 g-s-12">.bg-270.color-c-270</div>
+					<div class="bg-280 color-c-280 g-s-12">.bg-280.color-c-280</div>
+					<div class="bg-290 color-c-290 g-s-12">.bg-290.color-c-290</div>
+					<div class="bg-300 color-c-300 g-s-12">.bg-300.color-c-300</div>
+					<div class="bg-310 color-c-310 g-s-12">.bg-310.color-c-310</div>
+					<div class="bg-320 color-c-320 g-s-12">.bg-320.color-c-320</div>
+					<div class="bg-330 color-c-330 g-s-12">.bg-330.color-c-330</div>
+					<div class="bg-340 color-c-340 g-s-12">.bg-340.color-c-340</div>
+					<div class="bg-350 color-c-350 g-s-12">.bg-350.color-c-350</div>
+					<div class="bg-360 color-c-360 g-s-12">.bg-360.color-c-360</div>
+				</div>
+				<div class="grid g-s-2 pad-a--1">
+					<div class="g-s-12">standard</div>
+					<div class="bg-0 color-c-0 g-s-12">.bg-0.color-c-0</div>
+					<div class="bg-10 color-c-10 g-s-12">.bg-10.color-c-10</div>
+					<div class="bg-20 color-c-20 g-s-12">.bg-20.color-c-20</div>
+					<div class="bg-30 color-c-30 g-s-12">.bg-30.color-c-30</div>
+					<div class="bg-40 color-c-40 g-s-12">.bg-40.color-c-40</div>
+					<div class="bg-50 color-c-50 g-s-12">.bg-50.color-c-50</div>
+					<div class="bg-60 color-c-60 g-s-12">.bg-60.color-c-60</div>
+					<div class="bg-70 color-c-70 g-s-12">.bg-70.color-c-70</div>
+					<div class="bg-80 color-c-80 g-s-12">.bg-80.color-c-80</div>
+					<div class="bg-90 color-c-90 g-s-12">.bg-90.color-c-90</div>
+					<div class="bg-100 color-c-100 g-s-12">.bg-100.color-c-100</div>
+					<div class="bg-110 color-c-110 g-s-12">.bg-110.color-c-110</div>
+					<div class="bg-120 color-c-120 g-s-12">.bg-120.color-c-120</div>
+					<div class="bg-130 color-c-130 g-s-12">.bg-130.color-c-130</div>
+					<div class="bg-140 color-c-140 g-s-12">.bg-140.color-c-140</div>
+					<div class="bg-150 color-c-150 g-s-12">.bg-150.color-c-150</div>
+					<div class="bg-160 color-c-160 g-s-12">.bg-160.color-c-160</div>
+					<div class="bg-170 color-c-170 g-s-12">.bg-170.color-c-170</div>
+					<div class="bg-180 color-c-180 g-s-12">.bg-180.color-c-180</div>
+					<div class="bg-190 color-c-190 g-s-12">.bg-190.color-c-190</div>
+					<div class="bg-200 color-c-200 g-s-12">.bg-200.color-c-200</div>
+					<div class="bg-210 color-c-210 g-s-12">.bg-210.color-c-210</div>
+					<div class="bg-220 color-c-220 g-s-12">.bg-220.color-c-220</div>
+					<div class="bg-230 color-c-230 g-s-12">.bg-230.color-c-230</div>
+					<div class="bg-240 color-c-240 g-s-12">.bg-240.color-c-240</div>
+					<div class="bg-250 color-c-250 g-s-12">.bg-250.color-c-250</div>
+					<div class="bg-260 color-c-260 g-s-12">.bg-260.color-c-260</div>
+					<div class="bg-270 color-c-270 g-s-12">.bg-270.color-c-270</div>
+					<div class="bg-280 color-c-280 g-s-12">.bg-280.color-c-280</div>
+					<div class="bg-290 color-c-290 g-s-12">.bg-290.color-c-290</div>
+					<div class="bg-300 color-c-300 g-s-12">.bg-300.color-c-300</div>
+					<div class="bg-310 color-c-310 g-s-12">.bg-310.color-c-310</div>
+					<div class="bg-320 color-c-320 g-s-12">.bg-320.color-c-320</div>
+					<div class="bg-330 color-c-330 g-s-12">.bg-330.color-c-330</div>
+					<div class="bg-340 color-c-340 g-s-12">.bg-340.color-c-340</div>
+					<div class="bg-350 color-c-350 g-s-12">.bg-350.color-c-350</div>
+					<div class="bg-360 color-c-360 g-s-12">.bg-360.color-c-360</div>
+				</div>
+				<div class="grid g-s-2 pad-a--1 light">
+					<div class="g-s-12">.light</div>
+					<div class="bg-0 color-c-0 g-s-12">.bg-0.color-c-0</div>
+					<div class="bg-10 color-c-10 g-s-12">.bg-10.color-c-10</div>
+					<div class="bg-20 color-c-20 g-s-12">.bg-20.color-c-20</div>
+					<div class="bg-30 color-c-30 g-s-12">.bg-30.color-c-30</div>
+					<div class="bg-40 color-c-40 g-s-12">.bg-40.color-c-40</div>
+					<div class="bg-50 color-c-50 g-s-12">.bg-50.color-c-50</div>
+					<div class="bg-60 color-c-60 g-s-12">.bg-60.color-c-60</div>
+					<div class="bg-70 color-c-70 g-s-12">.bg-70.color-c-70</div>
+					<div class="bg-80 color-c-80 g-s-12">.bg-80.color-c-80</div>
+					<div class="bg-90 color-c-90 g-s-12">.bg-90.color-c-90</div>
+					<div class="bg-100 color-c-100 g-s-12">.bg-100.color-c-100</div>
+					<div class="bg-110 color-c-110 g-s-12">.bg-110.color-c-110</div>
+					<div class="bg-120 color-c-120 g-s-12">.bg-120.color-c-120</div>
+					<div class="bg-130 color-c-130 g-s-12">.bg-130.color-c-130</div>
+					<div class="bg-140 color-c-140 g-s-12">.bg-140.color-c-140</div>
+					<div class="bg-150 color-c-150 g-s-12">.bg-150.color-c-150</div>
+					<div class="bg-160 color-c-160 g-s-12">.bg-160.color-c-160</div>
+					<div class="bg-170 color-c-170 g-s-12">.bg-170.color-c-170</div>
+					<div class="bg-180 color-c-180 g-s-12">.bg-180.color-c-180</div>
+					<div class="bg-190 color-c-190 g-s-12">.bg-190.color-c-190</div>
+					<div class="bg-200 color-c-200 g-s-12">.bg-200.color-c-200</div>
+					<div class="bg-210 color-c-210 g-s-12">.bg-210.color-c-210</div>
+					<div class="bg-220 color-c-220 g-s-12">.bg-220.color-c-220</div>
+					<div class="bg-230 color-c-230 g-s-12">.bg-230.color-c-230</div>
+					<div class="bg-240 color-c-240 g-s-12">.bg-240.color-c-240</div>
+					<div class="bg-250 color-c-250 g-s-12">.bg-250.color-c-250</div>
+					<div class="bg-260 color-c-260 g-s-12">.bg-260.color-c-260</div>
+					<div class="bg-270 color-c-270 g-s-12">.bg-270.color-c-270</div>
+					<div class="bg-280 color-c-280 g-s-12">.bg-280.color-c-280</div>
+					<div class="bg-290 color-c-290 g-s-12">.bg-290.color-c-290</div>
+					<div class="bg-300 color-c-300 g-s-12">.bg-300.color-c-300</div>
+					<div class="bg-310 color-c-310 g-s-12">.bg-310.color-c-310</div>
+					<div class="bg-320 color-c-320 g-s-12">.bg-320.color-c-320</div>
+					<div class="bg-330 color-c-330 g-s-12">.bg-330.color-c-330</div>
+					<div class="bg-340 color-c-340 g-s-12">.bg-340.color-c-340</div>
+					<div class="bg-350 color-c-350 g-s-12">.bg-350.color-c-350</div>
+					<div class="bg-360 color-c-360 g-s-12">.bg-360.color-c-360</div>
+				</div>
+				<div class="grid g-s-2 pad-a--1 aurora">
+					<div class="g-s-12">.aurora</div>
+					<div class="bg-0 color-c-0 g-s-12">.bg-0.color-c-0</div>
+					<div class="bg-10 color-c-10 g-s-12">.bg-10.color-c-10</div>
+					<div class="bg-20 color-c-20 g-s-12">.bg-20.color-c-20</div>
+					<div class="bg-30 color-c-30 g-s-12">.bg-30.color-c-30</div>
+					<div class="bg-40 color-c-40 g-s-12">.bg-40.color-c-40</div>
+					<div class="bg-50 color-c-50 g-s-12">.bg-50.color-c-50</div>
+					<div class="bg-60 color-c-60 g-s-12">.bg-60.color-c-60</div>
+					<div class="bg-70 color-c-70 g-s-12">.bg-70.color-c-70</div>
+					<div class="bg-80 color-c-80 g-s-12">.bg-80.color-c-80</div>
+					<div class="bg-90 color-c-90 g-s-12">.bg-90.color-c-90</div>
+					<div class="bg-100 color-c-100 g-s-12">.bg-100.color-c-100</div>
+					<div class="bg-110 color-c-110 g-s-12">.bg-110.color-c-110</div>
+					<div class="bg-120 color-c-120 g-s-12">.bg-120.color-c-120</div>
+					<div class="bg-130 color-c-130 g-s-12">.bg-130.color-c-130</div>
+					<div class="bg-140 color-c-140 g-s-12">.bg-140.color-c-140</div>
+					<div class="bg-150 color-c-150 g-s-12">.bg-150.color-c-150</div>
+					<div class="bg-160 color-c-160 g-s-12">.bg-160.color-c-160</div>
+					<div class="bg-170 color-c-170 g-s-12">.bg-170.color-c-170</div>
+					<div class="bg-180 color-c-180 g-s-12">.bg-180.color-c-180</div>
+					<div class="bg-190 color-c-190 g-s-12">.bg-190.color-c-190</div>
+					<div class="bg-200 color-c-200 g-s-12">.bg-200.color-c-200</div>
+					<div class="bg-210 color-c-210 g-s-12">.bg-210.color-c-210</div>
+					<div class="bg-220 color-c-220 g-s-12">.bg-220.color-c-220</div>
+					<div class="bg-230 color-c-230 g-s-12">.bg-230.color-c-230</div>
+					<div class="bg-240 color-c-240 g-s-12">.bg-240.color-c-240</div>
+					<div class="bg-250 color-c-250 g-s-12">.bg-250.color-c-250</div>
+					<div class="bg-260 color-c-260 g-s-12">.bg-260.color-c-260</div>
+					<div class="bg-270 color-c-270 g-s-12">.bg-270.color-c-270</div>
+					<div class="bg-280 color-c-280 g-s-12">.bg-280.color-c-280</div>
+					<div class="bg-290 color-c-290 g-s-12">.bg-290.color-c-290</div>
+					<div class="bg-300 color-c-300 g-s-12">.bg-300.color-c-300</div>
+					<div class="bg-310 color-c-310 g-s-12">.bg-310.color-c-310</div>
+					<div class="bg-320 color-c-320 g-s-12">.bg-320.color-c-320</div>
+					<div class="bg-330 color-c-330 g-s-12">.bg-330.color-c-330</div>
+					<div class="bg-340 color-c-340 g-s-12">.bg-340.color-c-340</div>
+					<div class="bg-350 color-c-350 g-s-12">.bg-350.color-c-350</div>
+					<div class="bg-360 color-c-360 g-s-12">.bg-360.color-c-360</div>
+				</div>
+				<div class="grid g-s-2 pad-a--1 gray">
+					<div class="g-s-12">.gray</div>
+					<div class="bg-0 color-c-0 g-s-12">.bg-0.color-c-0</div>
+					<div class="bg-10 color-c-10 g-s-12">.bg-10.color-c-10</div>
+					<div class="bg-20 color-c-20 g-s-12">.bg-20.color-c-20</div>
+					<div class="bg-30 color-c-30 g-s-12">.bg-30.color-c-30</div>
+					<div class="bg-40 color-c-40 g-s-12">.bg-40.color-c-40</div>
+					<div class="bg-50 color-c-50 g-s-12">.bg-50.color-c-50</div>
+					<div class="bg-60 color-c-60 g-s-12">.bg-60.color-c-60</div>
+					<div class="bg-70 color-c-70 g-s-12">.bg-70.color-c-70</div>
+					<div class="bg-80 color-c-80 g-s-12">.bg-80.color-c-80</div>
+					<div class="bg-90 color-c-90 g-s-12">.bg-90.color-c-90</div>
+					<div class="bg-100 color-c-100 g-s-12">.bg-100.color-c-100</div>
+					<div class="bg-110 color-c-110 g-s-12">.bg-110.color-c-110</div>
+					<div class="bg-120 color-c-120 g-s-12">.bg-120.color-c-120</div>
+					<div class="bg-130 color-c-130 g-s-12">.bg-130.color-c-130</div>
+					<div class="bg-140 color-c-140 g-s-12">.bg-140.color-c-140</div>
+					<div class="bg-150 color-c-150 g-s-12">.bg-150.color-c-150</div>
+					<div class="bg-160 color-c-160 g-s-12">.bg-160.color-c-160</div>
+					<div class="bg-170 color-c-170 g-s-12">.bg-170.color-c-170</div>
+					<div class="bg-180 color-c-180 g-s-12">.bg-180.color-c-180</div>
+					<div class="bg-190 color-c-190 g-s-12">.bg-190.color-c-190</div>
+					<div class="bg-200 color-c-200 g-s-12">.bg-200.color-c-200</div>
+					<div class="bg-210 color-c-210 g-s-12">.bg-210.color-c-210</div>
+					<div class="bg-220 color-c-220 g-s-12">.bg-220.color-c-220</div>
+					<div class="bg-230 color-c-230 g-s-12">.bg-230.color-c-230</div>
+					<div class="bg-240 color-c-240 g-s-12">.bg-240.color-c-240</div>
+					<div class="bg-250 color-c-250 g-s-12">.bg-250.color-c-250</div>
+					<div class="bg-260 color-c-260 g-s-12">.bg-260.color-c-260</div>
+					<div class="bg-270 color-c-270 g-s-12">.bg-270.color-c-270</div>
+					<div class="bg-280 color-c-280 g-s-12">.bg-280.color-c-280</div>
+					<div class="bg-290 color-c-290 g-s-12">.bg-290.color-c-290</div>
+					<div class="bg-300 color-c-300 g-s-12">.bg-300.color-c-300</div>
+					<div class="bg-310 color-c-310 g-s-12">.bg-310.color-c-310</div>
+					<div class="bg-320 color-c-320 g-s-12">.bg-320.color-c-320</div>
+					<div class="bg-330 color-c-330 g-s-12">.bg-330.color-c-330</div>
+					<div class="bg-340 color-c-340 g-s-12">.bg-340.color-c-340</div>
+					<div class="bg-350 color-c-350 g-s-12">.bg-350.color-c-350</div>
+					<div class="bg-360 color-c-360 g-s-12">.bg-360.color-c-360</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

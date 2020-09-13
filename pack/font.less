@@ -1,0 +1,5 @@
+@import "list.less";
+
+each(@heading-item, {
+	.f@{index}, .h@{index}, h@{index} {font-size: ~"@{value}rem";}
+})
