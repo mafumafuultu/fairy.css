@@ -2,6 +2,7 @@
  * @author mafumafuultu
  * @license MIT
  * @repository https://github.com/mafumafuultu/fairy.css
+ * @version 20200926
  */
 @import "list.less";
 @import "font.less";
@@ -11,3 +12,18 @@
 @import "box.less";
 @import "tags.less";
 @import "debug.less";
+
+body {
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+
+/* a {} */
+a:link,.link {color: var(--link-base, #0000ee);}
+a:visited,.visited {color: var(--link-visited, #551a8b);}
+/* a:focus {} */
+/* a:hover {} */
+a:active,.active {color: var(--link-active, #ee0000);}
+
+.link {text-decoration: underline 1px var(--link-base, #0000ee);}
+.visited {text-decoration: underline 1px var(--link-visited, #551a8b);}
