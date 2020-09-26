@@ -382,6 +382,14 @@ Set the color of the text to be easier to read on a specified background color.
 |-|-|
 |`.gray`|0%|
 
+|class|mode|
+|-|-|
+|`no theme`|light mode|
+|`.ostheme`|dark OR light mode|
+|`.osdark`|dark mode|
+|`.oslight`|light mode|
+
+
 ```html
 <div class="darkness bg-0">darkness</div>
 <div class="dark bg-10">dark</div>
@@ -389,6 +397,33 @@ Set the color of the text to be easier to read on a specified background color.
 <div class="light bg-30">light</div>
 <div class="aurora bg-40">aurora</div>
 <div class="gray bg-50">aurora</div>
+<div class="ostheme">
+	<p>ostheme</p>
+	<span style="color:var(--link-base);">■■■■■■■ link color</span><br>
+	<span style="color:var(--link-visited);">■■■■■■■ link visited color</span><br>
+	<span style="color:var(--link-active);">■■■■■■■ link active color</span><br>
+	<a href="#" class="link">:link</a><br>
+	<a href="#" class="visited">:visited</a><br>
+	<a href="#" class="active">:active</a>
+</div>
+<div class="osdark">
+	<p>osdark</p>
+	<span style="color:var(--link-base);">■■■■■■■ link color</span><br>
+	<span style="color:var(--link-visited);">■■■■■■■ link visited color</span><br>
+	<span style="color:var(--link-active);">■■■■■■■ link active color</span><br>
+	<a href="#" class="link">:link</a><br>
+	<a href="#" class="visited">:visited</a><br>
+	<a href="#" class="active">:active</a>
+</div>
+<div class="oslight">
+	<p>oslight</p>
+	<span style="color:var(--link-base);">■■■■■■■ link color</span><br>
+	<span style="color:var(--link-visited);">■■■■■■■ link visited color</span><br>
+	<span style="color:var(--link-active);">■■■■■■■ link active color</span><br>
+	<a href="#" class="link">:link</a><br>
+	<a href="#" class="visited">:visited</a><br>
+	<a href="#" class="active">:active</a>
+</div>
 ```
 
 ## Debug

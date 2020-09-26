@@ -1,3 +1,52 @@
+:root {
+	--text-color: #3e3b3f;
+	--background-color: #f8f8f0;
+	--link-base: #0000ee;
+	--link-visited: #551a8b;
+	--link-active: #ee0000;
+}
+@media (prefers-color-scheme: dark) {
+	.ostheme {
+		--text-color: #f8f8f0;
+		--background-color: #2b292e;
+		--link-base: #99CCFF;
+		--link-visited: #3399FF;
+		--link-active: #e6db74;
+		color: var(--text-color);
+		background-color: var(--background-color);
+	}
+}
+@media (prefers-color-scheme: light) {
+	.ostheme {
+		--text-color: #3e3b3f;
+		--background-color: #f8f8f0;
+		--link-base: #0000ee;
+		--link-visited: #551a8b;
+		--link-active: #ee0000;
+		color: var(--text-color);
+		background-color: var(--background-color);
+	}
+}
+.osdark {
+	--text-color: #f8f8f0;
+	--background-color: #2b292e;
+	--link-base: #99CCFF;
+	--link-visited: #3399FF;
+	--link-active: #e6db74;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+.oslight {
+	--text-color: #3e3b3f;
+	--background-color: #f8f8f0;
+	--link-base: #0000ee;
+	--link-visited: #551a8b;
+	--link-active: #ee0000;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+
+
 .dark {
 	each(range(0, 360, 10), {
 		--color-@{value}: darken(hsl(@value, 100%, 50%), 20%);
@@ -53,3 +102,4 @@ each(range(0, 360, 10), {
 	.color-@{value} {color: var(~"--color-g-@{value}", var(~"--color-@{value}", hsl(@value, 100%, 50%)));}
 	.color-c-@{value} {color: var(~"--color-g-@{value}", var(~"--color-@{value}",contrast(hsl(0, 100%, unit(100/360*@value, ~"%")))));}
 })
+
