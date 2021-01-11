@@ -2,36 +2,90 @@
  * @author mafumafuultu
  * @license MIT
  * @repository https://github.com/mafumafuultu/fairy.css
+ * @version 20200926
  */
 .f1,
 .h1,
 h1 {
   font-size: 3rem;
+  font-weight: bold;
 }
 .f2,
 .h2,
 h2 {
   font-size: 2.25rem;
+  font-weight: bold;
 }
 .f3,
 .h3,
 h3 {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 .f4,
 .h4,
 h4 {
   font-size: 1.25rem;
+  font-weight: bold;
 }
 .f5,
 .h5,
 h5 {
   font-size: 1rem;
+  font-weight: bold;
 }
 .f6,
 .h6,
 h6 {
   font-size: 0.875rem;
+  font-weight: bold;
+}
+:root {
+  --text-color: #3e3b3f;
+  --background-color: #f8f8f0;
+  --link-base: #0000ee;
+  --link-visited: #551a8b;
+  --link-active: #ee0000;
+}
+@media (prefers-color-scheme: dark) {
+  .ostheme {
+    --text-color: #f8f8f0;
+    --background-color: #2b292e;
+    --link-base: #99CCFF;
+    --link-visited: #3399FF;
+    --link-active: #e6db74;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+}
+@media (prefers-color-scheme: light) {
+  .ostheme {
+    --text-color: #3e3b3f;
+    --background-color: #f8f8f0;
+    --link-base: #0000ee;
+    --link-visited: #551a8b;
+    --link-active: #ee0000;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+}
+.osdark {
+  --text-color: #f8f8f0;
+  --background-color: #2b292e;
+  --link-base: #99CCFF;
+  --link-visited: #3399FF;
+  --link-active: #e6db74;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+.oslight {
+  --text-color: #3e3b3f;
+  --background-color: #f8f8f0;
+  --link-base: #0000ee;
+  --link-visited: #551a8b;
+  --link-active: #ee0000;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 .dark {
   --color-0: hsl(0, 100%, 30%);
@@ -2751,4 +2805,29 @@ span.code {
 }
 .debug > * {
   border: solid 0.5px #000;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+/* a {} */
+a:link,
+.link {
+  color: var(--link-base, #0000ee);
+}
+a:visited,
+.visited {
+  color: var(--link-visited, #551a8b);
+}
+/* a:focus {} */
+/* a:hover {} */
+a:active,
+.active {
+  color: var(--link-active, #ee0000);
+}
+.link {
+  text-decoration: underline 1px var(--link-base, #0000ee);
+}
+.visited {
+  text-decoration: underline 1px var(--link-visited, #551a8b);
 }
